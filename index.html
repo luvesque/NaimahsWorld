@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" />
+  <title>Her World — Bedroom Prototype</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="app-shell">
+    <section class="game-wrap" aria-label="Her World bedroom game">
+      <div id="stage" class="stage">
+        <img class="room-bg" src="assets/room.png" alt="" draggable="false" />
+        <div id="scene" class="scene"></div>
+
+        <button id="homeBtn" class="round-btn home-btn" aria-label="Reset room">⌂</button>
+        <button id="poseBtn" class="round-btn pose-btn" aria-label="Switch character pose">↕</button>
+
+        <div id="trash" class="trash-zone" aria-hidden="true">×</div>
+      </div>
+
+      <nav class="dock" aria-label="Items">
+        <button class="dock-tab active" data-category="beds">Beds</button>
+        <button class="dock-tab" data-category="character">Girl</button>
+        <div id="inventory" class="inventory"></div>
+      </nav>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
